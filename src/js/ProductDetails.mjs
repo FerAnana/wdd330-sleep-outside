@@ -17,6 +17,8 @@ function addProductToCart(product) {
     const cartItems = cart ? JSON.parse(cart) : [];
     cartItems.push(product);
     localStorage.setItem("so-cart", JSON.stringify(cartItems));
+
+    window.dispatchEvent(new Event("cartUpdated"));
 }
 
 function renderProductDetails(product) {

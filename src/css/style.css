@@ -90,7 +90,7 @@ p {
   margin-top: -1.3em;
 }
 
-.logo--square > div {
+.logo--square>div {
   margin-top: -1.7em;
 }
 
@@ -125,6 +125,22 @@ button {
 
 .cart svg {
   width: 25px;
+}
+
+.cart span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: var(--small-font);
+  font-weight: bold;
+  background-color: var(--primary-color);
+  color: black;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .cart:hover svg {
